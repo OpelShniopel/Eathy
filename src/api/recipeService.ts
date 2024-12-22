@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const APP_ID = '1bf4d13a';
-const APP_KEY = '7e7ceb18026d502e6a5009d99f482acf';
+const APP_ID = process.env.EDAMAM_APP_ID;
+const APP_KEY = process.env.EDAMAM_APP_KEY;
 const BASE_URL = 'https://api.edamam.com/api/recipes/v2';
 
 interface Recipe {
